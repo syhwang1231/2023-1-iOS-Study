@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		3734D8C629D199A100D4B0C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3734D8C529D199A100D4B0C5 /* AppDelegate.swift */; };
 		3734D8C829D199A100D4B0C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3734D8C729D199A100D4B0C5 /* SceneDelegate.swift */; };
-		3734D8CA29D199A100D4B0C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3734D8C929D199A100D4B0C5 /* ViewController.swift */; };
 		3734D8CD29D199A100D4B0C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3734D8CB29D199A100D4B0C5 /* Main.storyboard */; };
 		3734D8CF29D199A400D4B0C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3734D8CE29D199A400D4B0C5 /* Assets.xcassets */; };
 		3734D8D229D199A400D4B0C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3734D8D029D199A400D4B0C5 /* LaunchScreen.storyboard */; };
+		3734D8DA29D27F6900D4B0C5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3734D8D929D27F6900D4B0C5 /* RegisterViewController.swift */; };
+		3734D8DC29D27FA800D4B0C5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3734D8DB29D27FA800D4B0C5 /* LoginViewController.swift */; };
+		3734D8DE29D31A3B00D4B0C5 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3734D8DD29D31A3B00D4B0C5 /* UIView+Extension.swift */; };
+		3734D8E029D31CBF00D4B0C5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3734D8DF29D31CBF00D4B0C5 /* UIViewController+Extension.swift */; };
+		3734D8E229D46AC600D4B0C5 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3734D8E129D46AC600D4B0C5 /* UserInfo.swift */; };
+		3734D8E429D471BD00D4B0C5 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3734D8E329D471BD00D4B0C5 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3734D8C229D199A100D4B0C5 /* Catstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3734D8C529D199A100D4B0C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3734D8C729D199A100D4B0C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3734D8C929D199A100D4B0C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3734D8CC29D199A100D4B0C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3734D8CE29D199A400D4B0C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3734D8D129D199A400D4B0C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3734D8D329D199A400D4B0C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3734D8D929D27F6900D4B0C5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3734D8DB29D27FA800D4B0C5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3734D8DD29D31A3B00D4B0C5 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		3734D8DF29D31CBF00D4B0C5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		3734D8E129D46AC600D4B0C5 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		3734D8E329D471BD00D4B0C5 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +68,13 @@
 			children = (
 				3734D8C529D199A100D4B0C5 /* AppDelegate.swift */,
 				3734D8C729D199A100D4B0C5 /* SceneDelegate.swift */,
-				3734D8C929D199A100D4B0C5 /* ViewController.swift */,
 				3734D8CB29D199A100D4B0C5 /* Main.storyboard */,
+				3734D8E329D471BD00D4B0C5 /* TestViewController.swift */,
+				3734D8DF29D31CBF00D4B0C5 /* UIViewController+Extension.swift */,
+				3734D8DB29D27FA800D4B0C5 /* LoginViewController.swift */,
+				3734D8D929D27F6900D4B0C5 /* RegisterViewController.swift */,
+				3734D8E129D46AC600D4B0C5 /* UserInfo.swift */,
+				3734D8DD29D31A3B00D4B0C5 /* UIView+Extension.swift */,
 				3734D8CE29D199A400D4B0C5 /* Assets.xcassets */,
 				3734D8D029D199A400D4B0C5 /* LaunchScreen.storyboard */,
 				3734D8D329D199A400D4B0C5 /* Info.plist */,
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3734D8CA29D199A100D4B0C5 /* ViewController.swift in Sources */,
+				3734D8E029D31CBF00D4B0C5 /* UIViewController+Extension.swift in Sources */,
+				3734D8DC29D27FA800D4B0C5 /* LoginViewController.swift in Sources */,
+				3734D8E429D471BD00D4B0C5 /* TestViewController.swift in Sources */,
 				3734D8C629D199A100D4B0C5 /* AppDelegate.swift in Sources */,
 				3734D8C829D199A100D4B0C5 /* SceneDelegate.swift in Sources */,
+				3734D8DE29D31A3B00D4B0C5 /* UIView+Extension.swift in Sources */,
+				3734D8E229D46AC600D4B0C5 /* UserInfo.swift in Sources */,
+				3734D8DA29D27F6900D4B0C5 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
