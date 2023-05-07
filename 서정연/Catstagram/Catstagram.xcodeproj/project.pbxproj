@@ -18,6 +18,13 @@
 		3734D8E029D31CBF00D4B0C5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3734D8DF29D31CBF00D4B0C5 /* UIViewController+Extension.swift */; };
 		3734D8E229D46AC600D4B0C5 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3734D8E129D46AC600D4B0C5 /* UserInfo.swift */; };
 		3734D8E429D471BD00D4B0C5 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3734D8E329D471BD00D4B0C5 /* TestViewController.swift */; };
+		37AA62AD29FFA3640098DE37 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA62AC29FFA3640098DE37 /* HomeViewController.swift */; };
+		37AA62B129FFA80C0098DE37 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA62AF29FFA80C0098DE37 /* FeedTableViewCell.swift */; };
+		37AA62B229FFA80C0098DE37 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37AA62B029FFA80C0098DE37 /* FeedTableViewCell.xib */; };
+		37FE6BF72A0272520064594A /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE6BF52A0272520064594A /* StoryTableViewCell.swift */; };
+		37FE6BF82A0272520064594A /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37FE6BF62A0272520064594A /* StoryTableViewCell.xib */; };
+		37FE6BFB2A0278CC0064594A /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE6BF92A0278CC0064594A /* StoryCollectionViewCell.swift */; };
+		37FE6BFC2A0278CC0064594A /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37FE6BFA2A0278CC0064594A /* StoryCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +41,13 @@
 		3734D8DF29D31CBF00D4B0C5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		3734D8E129D46AC600D4B0C5 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		3734D8E329D471BD00D4B0C5 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		37AA62AC29FFA3640098DE37 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		37AA62AF29FFA80C0098DE37 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		37AA62B029FFA80C0098DE37 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		37FE6BF52A0272520064594A /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		37FE6BF62A0272520064594A /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
+		37FE6BF92A0278CC0064594A /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		37FE6BFA2A0278CC0064594A /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,7 @@
 		3734D8C429D199A100D4B0C5 /* Catstagram */ = {
 			isa = PBXGroup;
 			children = (
+				37AA62AB29FFA34A0098DE37 /* Home */,
 				3734D8C529D199A100D4B0C5 /* AppDelegate.swift */,
 				3734D8C729D199A100D4B0C5 /* SceneDelegate.swift */,
 				3734D8CB29D199A100D4B0C5 /* Main.storyboard */,
@@ -80,6 +95,28 @@
 				3734D8D329D199A400D4B0C5 /* Info.plist */,
 			);
 			path = Catstagram;
+			sourceTree = "<group>";
+		};
+		37AA62AB29FFA34A0098DE37 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				37AA62AE29FFA7A00098DE37 /* Cell */,
+				37AA62AC29FFA3640098DE37 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		37AA62AE29FFA7A00098DE37 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				37AA62AF29FFA80C0098DE37 /* FeedTableViewCell.swift */,
+				37AA62B029FFA80C0098DE37 /* FeedTableViewCell.xib */,
+				37FE6BF52A0272520064594A /* StoryTableViewCell.swift */,
+				37FE6BF62A0272520064594A /* StoryTableViewCell.xib */,
+				37FE6BF92A0278CC0064594A /* StoryCollectionViewCell.swift */,
+				37FE6BFA2A0278CC0064594A /* StoryCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +178,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3734D8D229D199A400D4B0C5 /* LaunchScreen.storyboard in Resources */,
+				37AA62B229FFA80C0098DE37 /* FeedTableViewCell.xib in Resources */,
 				3734D8CF29D199A400D4B0C5 /* Assets.xcassets in Resources */,
+				37FE6BF82A0272520064594A /* StoryTableViewCell.xib in Resources */,
+				37FE6BFC2A0278CC0064594A /* StoryCollectionViewCell.xib in Resources */,
 				3734D8CD29D199A100D4B0C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,11 +196,15 @@
 				3734D8E029D31CBF00D4B0C5 /* UIViewController+Extension.swift in Sources */,
 				3734D8DC29D27FA800D4B0C5 /* LoginViewController.swift in Sources */,
 				3734D8E429D471BD00D4B0C5 /* TestViewController.swift in Sources */,
+				37FE6BF72A0272520064594A /* StoryTableViewCell.swift in Sources */,
+				37FE6BFB2A0278CC0064594A /* StoryCollectionViewCell.swift in Sources */,
 				3734D8C629D199A100D4B0C5 /* AppDelegate.swift in Sources */,
 				3734D8C829D199A100D4B0C5 /* SceneDelegate.swift in Sources */,
+				37AA62AD29FFA3640098DE37 /* HomeViewController.swift in Sources */,
 				3734D8DE29D31A3B00D4B0C5 /* UIView+Extension.swift in Sources */,
 				3734D8E229D46AC600D4B0C5 /* UserInfo.swift in Sources */,
 				3734D8DA29D27F6900D4B0C5 /* RegisterViewController.swift in Sources */,
+				37AA62B129FFA80C0098DE37 /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
