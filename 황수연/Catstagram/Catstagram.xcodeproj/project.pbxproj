@@ -18,6 +18,11 @@
 		08230D5329CF017600807BA2 /* CatstagramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08230D5229CF017600807BA2 /* CatstagramUITestsLaunchTests.swift */; };
 		08230D6029CF1E3100807BA2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08230D5F29CF1E3100807BA2 /* LogInViewController.swift */; };
 		08230D6229CF2A1200807BA2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08230D6129CF2A1200807BA2 /* RegisterViewController.swift */; };
+		083131B12A0638B400B86D3C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083131B02A0638B400B86D3C /* ProfileViewController.swift */; };
+		083131B52A06421B00B86D3C /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083131B32A06421B00B86D3C /* ProfileCollectionViewCell.swift */; };
+		083131B62A06421B00B86D3C /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 083131B42A06421B00B86D3C /* ProfileCollectionViewCell.xib */; };
+		083131BB2A07952D00B86D3C /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083131B92A07952D00B86D3C /* PostCollectionViewCell.swift */; };
+		083131BC2A07952D00B86D3C /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 083131BA2A07952D00B86D3C /* PostCollectionViewCell.xib */; };
 		0856A4B229D1AF5E006DCCA8 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856A4B129D1AF5E006DCCA8 /* UIView+Extension.swift */; };
 		0856A4B429D1B573006DCCA8 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856A4B329D1B573006DCCA8 /* UIViewController+Extension.swift */; };
 		0856A4B629D1CB69006DCCA8 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856A4B529D1CB69006DCCA8 /* UIColor+Extension.swift */; };
@@ -64,6 +69,11 @@
 		08230D5229CF017600807BA2 /* CatstagramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatstagramUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		08230D5F29CF1E3100807BA2 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		08230D6129CF2A1200807BA2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		083131B02A0638B400B86D3C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		083131B32A06421B00B86D3C /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		083131B42A06421B00B86D3C /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
+		083131B92A07952D00B86D3C /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		083131BA2A07952D00B86D3C /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		0856A4B129D1AF5E006DCCA8 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		0856A4B329D1B573006DCCA8 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		0856A4B529D1CB69006DCCA8 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -126,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				08EAA62129E2CEC2007ADC1B /* Home */,
+				083131AF2A06387800B86D3C /* Profile */,
 				0856A4B329D1B573006DCCA8 /* UIViewController+Extension.swift */,
 				08230D2F29CF017300807BA2 /* AppDelegate.swift */,
 				08230D3129CF017300807BA2 /* SceneDelegate.swift */,
@@ -158,6 +169,42 @@
 				08230D5229CF017600807BA2 /* CatstagramUITestsLaunchTests.swift */,
 			);
 			path = CatstagramUITests;
+			sourceTree = "<group>";
+		};
+		083131AF2A06387800B86D3C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				083131B22A0641E000B86D3C /* cell */,
+				083131B02A0638B400B86D3C /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		083131B22A0641E000B86D3C /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				083131B82A07950D00B86D3C /* PostCell */,
+				083131B72A0794DF00B86D3C /* ProfileCell */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		083131B72A0794DF00B86D3C /* ProfileCell */ = {
+			isa = PBXGroup;
+			children = (
+				083131B32A06421B00B86D3C /* ProfileCollectionViewCell.swift */,
+				083131B42A06421B00B86D3C /* ProfileCollectionViewCell.xib */,
+			);
+			path = ProfileCell;
+			sourceTree = "<group>";
+		};
+		083131B82A07950D00B86D3C /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				083131B92A07952D00B86D3C /* PostCollectionViewCell.swift */,
+				083131BA2A07952D00B86D3C /* PostCollectionViewCell.xib */,
+			);
+			path = PostCell;
 			sourceTree = "<group>";
 		};
 		08EAA62129E2CEC2007ADC1B /* Home */ = {
@@ -286,9 +333,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				083131BC2A07952D00B86D3C /* PostCollectionViewCell.xib in Resources */,
 				08230D3C29CF017500807BA2 /* LaunchScreen.storyboard in Resources */,
 				08EAA62829E56602007ADC1B /* FeedTableViewCell.xib in Resources */,
 				08230D3929CF017500807BA2 /* Assets.xcassets in Resources */,
+				083131B62A06421B00B86D3C /* ProfileCollectionViewCell.xib in Resources */,
 				08EAA62C29E812E5007ADC1B /* StoryTableViewCell.xib in Resources */,
 				08EAA63029E81EC2007ADC1B /* StoryCollectionViewCell.xib in Resources */,
 				08230D3729CF017300807BA2 /* Main.storyboard in Resources */,
@@ -320,6 +369,9 @@
 				08230D6029CF1E3100807BA2 /* LogInViewController.swift in Sources */,
 				08230D6229CF2A1200807BA2 /* RegisterViewController.swift in Sources */,
 				08230D3429CF017300807BA2 /* ViewController.swift in Sources */,
+				083131BB2A07952D00B86D3C /* PostCollectionViewCell.swift in Sources */,
+				083131B52A06421B00B86D3C /* ProfileCollectionViewCell.swift in Sources */,
+				083131B12A0638B400B86D3C /* ProfileViewController.swift in Sources */,
 				0856A4B429D1B573006DCCA8 /* UIViewController+Extension.swift in Sources */,
 				08EAA62329E2CED1007ADC1B /* HomeViewController.swift in Sources */,
 				08230D3029CF017300807BA2 /* AppDelegate.swift in Sources */,
