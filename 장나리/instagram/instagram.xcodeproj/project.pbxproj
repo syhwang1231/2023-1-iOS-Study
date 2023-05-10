@@ -17,6 +17,11 @@
 		EA2DE1FF2A02A2F400F54D67 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2DE1FD2A02A2F400F54D67 /* StoryTableViewCell.xib */; };
 		EA2DE2022A02ACF500F54D67 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2DE2002A02ACF500F54D67 /* StoryCollectionViewCell.swift */; };
 		EA2DE2032A02ACF500F54D67 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2DE2012A02ACF500F54D67 /* StoryCollectionViewCell.xib */; };
+		EA709E852A09E4EE00618014 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA709E842A09E4EE00618014 /* ProfileViewController.swift */; };
+		EA709E892A09E8D800618014 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA709E872A09E8D800618014 /* ProfileCollectionViewCell.swift */; };
+		EA709E8A2A09E8D800618014 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA709E882A09E8D800618014 /* ProfileCollectionViewCell.xib */; };
+		EA709E8F2A0B5F5B00618014 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA709E8D2A0B5F5B00618014 /* PostCollectionViewCell.swift */; };
+		EA709E902A0B5F5B00618014 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA709E8E2A0B5F5B00618014 /* PostCollectionViewCell.xib */; };
 		EA92002D29D02EAF00626E13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA92002C29D02EAF00626E13 /* ViewController.swift */; };
 		EA92002F29D02ED800626E13 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA92002E29D02ED800626E13 /* LoginViewController.swift */; };
 		EA92003129D034B000626E13 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA92003029D034B000626E13 /* RegisterViewController.swift */; };
@@ -58,6 +63,11 @@
 		EA2DE1FD2A02A2F400F54D67 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
 		EA2DE2002A02ACF500F54D67 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		EA2DE2012A02ACF500F54D67 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		EA709E842A09E4EE00618014 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EA709E872A09E8D800618014 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA709E882A09E8D800618014 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
+		EA709E8D2A0B5F5B00618014 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA709E8E2A0B5F5B00618014 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		EA92002C29D02EAF00626E13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA92002E29D02ED800626E13 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EA92003029D034B000626E13 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +132,42 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		EA709E832A09E4CA00618014 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EA709E862A09E8A700618014 /* Cell */,
+				EA709E842A09E4EE00618014 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		EA709E862A09E8A700618014 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EA709E8C2A0B5F2500618014 /* ProfileCell */,
+				EA709E8B2A0B5F1300618014 /* PostCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EA709E8B2A0B5F1300618014 /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				EA709E8D2A0B5F5B00618014 /* PostCollectionViewCell.swift */,
+				EA709E8E2A0B5F5B00618014 /* PostCollectionViewCell.xib */,
+			);
+			path = PostCell;
+			sourceTree = "<group>";
+		};
+		EA709E8C2A0B5F2500618014 /* ProfileCell */ = {
+			isa = PBXGroup;
+			children = (
+				EA709E872A09E8D800618014 /* ProfileCollectionViewCell.swift */,
+				EA709E882A09E8D800618014 /* ProfileCollectionViewCell.xib */,
+			);
+			path = ProfileCell;
+			sourceTree = "<group>";
+		};
 		EAF3E67729C9DBAE006B16BE = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +191,7 @@
 		EAF3E68229C9DBAE006B16BE /* instagram */ = {
 			isa = PBXGroup;
 			children = (
+				EA709E832A09E4CA00618014 /* Profile */,
 				EA2DE1F429FFD30500F54D67 /* Home */,
 				EAF3E68329C9DBAE006B16BE /* AppDelegate.swift */,
 				EAF3E68529C9DBAE006B16BE /* SceneDelegate.swift */,
@@ -283,9 +330,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA709E902A0B5F5B00618014 /* PostCollectionViewCell.xib in Resources */,
 				EAF3E69029C9DBAF006B16BE /* LaunchScreen.storyboard in Resources */,
 				EA2DE1FB29FFD76500F54D67 /* FeedTableViewCell.xib in Resources */,
 				EAF3E68D29C9DBAF006B16BE /* Assets.xcassets in Resources */,
+				EA709E8A2A09E8D800618014 /* ProfileCollectionViewCell.xib in Resources */,
 				EA2DE1FF2A02A2F400F54D67 /* StoryTableViewCell.xib in Resources */,
 				EA2DE2032A02ACF500F54D67 /* StoryCollectionViewCell.xib in Resources */,
 				EAF3E68B29C9DBAE006B16BE /* Main.storyboard in Resources */,
@@ -318,11 +367,14 @@
 				EA92003129D034B000626E13 /* RegisterViewController.swift in Sources */,
 				EA2DE1FE2A02A2F400F54D67 /* StoryTableViewCell.swift in Sources */,
 				EA2DE2022A02ACF500F54D67 /* StoryCollectionViewCell.swift in Sources */,
+				EA709E8F2A0B5F5B00618014 /* PostCollectionViewCell.swift in Sources */,
 				EAF3E68429C9DBAE006B16BE /* AppDelegate.swift in Sources */,
 				EA100E9629D37C0A00CB8C3C /* UserInfo.swift in Sources */,
 				EA2DE1F629FFD32600F54D67 /* HomeViewController.swift in Sources */,
 				EA100E9429D375FA00CB8C3C /* UIViewController+Extension.swift in Sources */,
 				EA92002D29D02EAF00626E13 /* ViewController.swift in Sources */,
+				EA709E892A09E8D800618014 /* ProfileCollectionViewCell.swift in Sources */,
+				EA709E852A09E4EE00618014 /* ProfileViewController.swift in Sources */,
 				EAF3E68629C9DBAE006B16BE /* SceneDelegate.swift in Sources */,
 				EA2DE1FA29FFD76500F54D67 /* FeedTableViewCell.swift in Sources */,
 			);
