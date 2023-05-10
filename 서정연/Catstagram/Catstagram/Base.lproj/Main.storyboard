@@ -357,30 +357,55 @@
             </objects>
             <point key="canvasLocation" x="1687.7862595419847" y="-2.1126760563380285"/>
         </scene>
-        <!--Profile-->
+        <!--Profile View Controller-->
         <scene sceneID="K1v-aW-GLY">
             <objects>
-                <viewController id="PM4-Cx-F4u" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileVC" id="PM4-Cx-F4u" customClass="ProfileViewController" customModule="Catstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aQT-VU-GK5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="088-eP-dJv">
-                                <rect key="frame" x="157" y="355" width="82" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yE2-Hv-OLY">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VKZ-KC-yYf">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ffu-El-PQb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yE2-Hv-OLY" firstAttribute="leading" secondItem="ffu-El-PQb" secondAttribute="leading" id="5V8-JH-z44"/>
+                            <constraint firstItem="yE2-Hv-OLY" firstAttribute="top" secondItem="ffu-El-PQb" secondAttribute="top" id="Mcp-vT-2xP"/>
+                            <constraint firstItem="ffu-El-PQb" firstAttribute="bottom" secondItem="yE2-Hv-OLY" secondAttribute="bottom" id="PYK-uV-gwl"/>
+                            <constraint firstItem="ffu-El-PQb" firstAttribute="trailing" secondItem="yE2-Hv-OLY" secondAttribute="trailing" id="gAj-gq-Ld6"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="eD3-bP-Fky"/>
+                    <navigationItem key="navigationItem" id="Dsw-hB-lPy">
+                        <barButtonItem key="leftBarButtonItem" title="Nickname" id="7DG-QS-eeE">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="line.3.horizontal" catalog="system" id="jXo-c5-7el">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="plus.app" catalog="system" id="mG1-1u-elk">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="profileCollectionView" destination="yE2-Hv-OLY" id="ZQ5-IQ-xRD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qYx-Ee-XA3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1688" y="1432"/>
+            <point key="canvasLocation" x="2444" y="1432"/>
         </scene>
         <!--Home-->
         <scene sceneID="LhS-2f-tfI">
@@ -468,7 +493,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="6jy-Mc-rti" kind="relationship" relationship="viewControllers" id="ab1-sv-D3d"/>
-                        <segue destination="PM4-Cx-F4u" kind="relationship" relationship="viewControllers" id="WzJ-CK-EfV"/>
+                        <segue destination="zRF-Ty-HeI" kind="relationship" relationship="viewControllers" id="WzJ-CK-EfV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Wi-Z1-Vfl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -493,6 +518,25 @@
             </objects>
             <point key="canvasLocation" x="247" y="-2"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="v3e-lt-7DL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zRF-Ty-HeI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" id="eD3-bP-Fky"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pBq-uW-RLs">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PM4-Cx-F4u" kind="relationship" relationship="rootViewController" id="ewP-QK-8Yz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ko-Nd-71m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1687.7862595419847" y="1431.6901408450706"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="95"/>
@@ -500,6 +544,8 @@
         <image name="ic_catstagram_logo" width="476" height="96"/>
         <image name="ic_home_heart" width="512" height="512"/>
         <image name="ic_home_send" width="512" height="512"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
