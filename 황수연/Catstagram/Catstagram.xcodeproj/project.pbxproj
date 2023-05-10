@@ -22,6 +22,13 @@
 		0856A4B429D1B573006DCCA8 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856A4B329D1B573006DCCA8 /* UIViewController+Extension.swift */; };
 		0856A4B629D1CB69006DCCA8 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856A4B529D1CB69006DCCA8 /* UIColor+Extension.swift */; };
 		0856A4B829D1EEDC006DCCA8 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856A4B729D1EEDC006DCCA8 /* UserInfo.swift */; };
+		08EAA62329E2CED1007ADC1B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EAA62229E2CED1007ADC1B /* HomeViewController.swift */; };
+		08EAA62729E56602007ADC1B /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EAA62529E56602007ADC1B /* FeedTableViewCell.swift */; };
+		08EAA62829E56602007ADC1B /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EAA62629E56602007ADC1B /* FeedTableViewCell.xib */; };
+		08EAA62B29E812E5007ADC1B /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EAA62929E812E5007ADC1B /* StoryTableViewCell.swift */; };
+		08EAA62C29E812E5007ADC1B /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EAA62A29E812E5007ADC1B /* StoryTableViewCell.xib */; };
+		08EAA62F29E81EC2007ADC1B /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EAA62D29E81EC2007ADC1B /* StoryCollectionViewCell.swift */; };
+		08EAA63029E81EC2007ADC1B /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EAA62E29E81EC2007ADC1B /* StoryCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +68,13 @@
 		0856A4B329D1B573006DCCA8 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		0856A4B529D1CB69006DCCA8 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		0856A4B729D1EEDC006DCCA8 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		08EAA62229E2CED1007ADC1B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		08EAA62529E56602007ADC1B /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		08EAA62629E56602007ADC1B /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		08EAA62929E812E5007ADC1B /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		08EAA62A29E812E5007ADC1B /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
+		08EAA62D29E81EC2007ADC1B /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		08EAA62E29E81EC2007ADC1B /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +125,7 @@
 		08230D2E29CF017300807BA2 /* Catstagram */ = {
 			isa = PBXGroup;
 			children = (
+				08EAA62129E2CEC2007ADC1B /* Home */,
 				0856A4B329D1B573006DCCA8 /* UIViewController+Extension.swift */,
 				08230D2F29CF017300807BA2 /* AppDelegate.swift */,
 				08230D3129CF017300807BA2 /* SceneDelegate.swift */,
@@ -143,6 +158,28 @@
 				08230D5229CF017600807BA2 /* CatstagramUITestsLaunchTests.swift */,
 			);
 			path = CatstagramUITests;
+			sourceTree = "<group>";
+		};
+		08EAA62129E2CEC2007ADC1B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				08EAA62429E56599007ADC1B /* Cell */,
+				08EAA62229E2CED1007ADC1B /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		08EAA62429E56599007ADC1B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				08EAA62529E56602007ADC1B /* FeedTableViewCell.swift */,
+				08EAA62629E56602007ADC1B /* FeedTableViewCell.xib */,
+				08EAA62929E812E5007ADC1B /* StoryTableViewCell.swift */,
+				08EAA62A29E812E5007ADC1B /* StoryTableViewCell.xib */,
+				08EAA62D29E81EC2007ADC1B /* StoryCollectionViewCell.swift */,
+				08EAA62E29E81EC2007ADC1B /* StoryCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +287,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				08230D3C29CF017500807BA2 /* LaunchScreen.storyboard in Resources */,
+				08EAA62829E56602007ADC1B /* FeedTableViewCell.xib in Resources */,
 				08230D3929CF017500807BA2 /* Assets.xcassets in Resources */,
+				08EAA62C29E812E5007ADC1B /* StoryTableViewCell.xib in Resources */,
+				08EAA63029E81EC2007ADC1B /* StoryCollectionViewCell.xib in Resources */,
 				08230D3729CF017300807BA2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,10 +321,14 @@
 				08230D6229CF2A1200807BA2 /* RegisterViewController.swift in Sources */,
 				08230D3429CF017300807BA2 /* ViewController.swift in Sources */,
 				0856A4B429D1B573006DCCA8 /* UIViewController+Extension.swift in Sources */,
+				08EAA62329E2CED1007ADC1B /* HomeViewController.swift in Sources */,
 				08230D3029CF017300807BA2 /* AppDelegate.swift in Sources */,
 				08230D3229CF017300807BA2 /* SceneDelegate.swift in Sources */,
+				08EAA62F29E81EC2007ADC1B /* StoryCollectionViewCell.swift in Sources */,
 				0856A4B829D1EEDC006DCCA8 /* UserInfo.swift in Sources */,
 				0856A4B629D1CB69006DCCA8 /* UIColor+Extension.swift in Sources */,
+				08EAA62729E56602007ADC1B /* FeedTableViewCell.swift in Sources */,
+				08EAA62B29E812E5007ADC1B /* StoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
