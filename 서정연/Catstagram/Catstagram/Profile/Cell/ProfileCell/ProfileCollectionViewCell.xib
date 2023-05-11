@@ -51,8 +51,8 @@
                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </buttonConfiguration>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서정연" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGN-LB-0Xv">
-                        <rect key="frame" x="37" y="98" width="34" height="15.666666666666671"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cindy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGN-LB-0Xv">
+                        <rect key="frame" x="35.333333333333343" y="98" width="37.666666666666657" height="15.666666666666671"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -144,7 +144,7 @@
                 <outlet property="profileEditButton" destination="YJB-zs-iCC" id="hry-Zb-SJj"/>
                 <outlet property="profileImageView" destination="ZJ8-v9-KG6" id="5ad-GL-z0k"/>
             </connections>
-            <point key="canvasLocation" x="314" y="26"/>
+            <point key="canvasLocation" x="404" y="29"/>
         </collectionViewCell>
     </objects>
     <resources>
