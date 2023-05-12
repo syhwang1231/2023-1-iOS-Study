@@ -71,7 +71,7 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
 }
 extension ProfileViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        //코어 그래픽 사이즈 리던
+        //코어 그래픽 사이즈 리턴
         let section = indexPath.section
         switch section {
         case 0:
