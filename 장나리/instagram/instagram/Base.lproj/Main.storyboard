@@ -349,30 +349,55 @@
             </objects>
             <point key="canvasLocation" x="1460" y="-28.436018957345969"/>
         </scene>
-        <!--Profile-->
+        <!--Profile View Controller-->
         <scene sceneID="7DY-r1-upV">
             <objects>
-                <viewController id="GAH-ZL-fhh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileVC" id="GAH-ZL-fhh" customClass="ProfileViewController" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gp2-88-R85">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAa-M1-PxN">
-                                <rect key="frame" x="160" y="407" width="76" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fD3-up-fV2">
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pnp-LZ-ibw">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="1" minY="0.0" maxX="1" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aSa-YO-n5C"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aSa-YO-n5C" firstAttribute="trailing" secondItem="fD3-up-fV2" secondAttribute="trailing" id="4XT-sF-WU2"/>
+                            <constraint firstItem="fD3-up-fV2" firstAttribute="leading" secondItem="aSa-YO-n5C" secondAttribute="leading" id="5xS-i6-Myp"/>
+                            <constraint firstItem="fD3-up-fV2" firstAttribute="top" secondItem="aSa-YO-n5C" secondAttribute="top" id="AUl-vu-RLb"/>
+                            <constraint firstItem="aSa-YO-n5C" firstAttribute="bottom" secondItem="fD3-up-fV2" secondAttribute="bottom" id="YX4-pm-p60"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="5Hg-dS-JNK"/>
+                    <navigationItem key="navigationItem" id="gfj-mM-GGZ">
+                        <barButtonItem key="leftBarButtonItem" title="Nickname" id="Lmh-j8-lmd">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="line.3.horizontal" catalog="system" id="Ml0-H1-Wyu">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="plus.app" catalog="system" id="3Zi-Gu-mZs">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="profileCollectionView" destination="fD3-up-fV2" id="OwJ-gb-SIQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HNw-wa-Jks" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1460" y="1543"/>
+            <point key="canvasLocation" x="2389.2307692307691" y="1542.654028436019"/>
         </scene>
         <!--Home-->
         <scene sceneID="yF8-db-pwL">
@@ -471,7 +496,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="5bV-g9-TCq" kind="relationship" relationship="viewControllers" id="oLc-sf-PYi"/>
-                        <segue destination="GAH-ZL-fhh" kind="relationship" relationship="viewControllers" id="BWF-eT-Vvg"/>
+                        <segue destination="qG9-kB-Amx" kind="relationship" relationship="viewControllers" id="BWF-eT-Vvg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EdK-f3-v1E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -496,6 +521,25 @@
             </objects>
             <point key="canvasLocation" x="32.307692307692307" y="-27.72511848341232"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="elj-Tt-gb9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qG9-kB-Amx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" id="5Hg-dS-JNK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0RB-O9-6kl">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GAH-ZL-fhh" kind="relationship" relationship="rootViewController" id="l8M-WE-ZMh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oty-XD-WWg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1460" y="1542.654028436019"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="95"/>
@@ -504,6 +548,8 @@
         <image name="ic_home_heart" width="512" height="512"/>
         <image name="ic_home_send" width="512" height="512"/>
         <image name="ic_home_upload" width="512" height="512"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
