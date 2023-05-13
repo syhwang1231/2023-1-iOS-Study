@@ -34,6 +34,9 @@
 		08EAA62C29E812E5007ADC1B /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EAA62A29E812E5007ADC1B /* StoryTableViewCell.xib */; };
 		08EAA62F29E81EC2007ADC1B /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EAA62D29E81EC2007ADC1B /* StoryCollectionViewCell.swift */; };
 		08EAA63029E81EC2007ADC1B /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EAA62E29E81EC2007ADC1B /* StoryCollectionViewCell.xib */; };
+		D31FF53390688A6110D37CE0 /* Pods_Catstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559A9A1023AE41050018B45D /* Pods_Catstagram.framework */; };
+		DEE078EC3ECD5CA2F3F06E6C /* Pods_CatstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E28FBFCC302545C317FA893 /* Pods_CatstagramTests.framework */; };
+		FCC9B8E85F97726D803F0EF9 /* Pods_Catstagram_CatstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6D9E72F771EEDF10226B30 /* Pods_Catstagram_CatstagramUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,15 @@
 		08EAA62A29E812E5007ADC1B /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
 		08EAA62D29E81EC2007ADC1B /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		08EAA62E29E81EC2007ADC1B /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		188BDAB59CAB2CBF7AA3FEA1 /* Pods-CatstagramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatstagramTests.release.xcconfig"; path = "Target Support Files/Pods-CatstagramTests/Pods-CatstagramTests.release.xcconfig"; sourceTree = "<group>"; };
+		51E3329893E761C3237CC46F /* Pods-Catstagram-CatstagramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catstagram-CatstagramUITests.debug.xcconfig"; path = "Target Support Files/Pods-Catstagram-CatstagramUITests/Pods-Catstagram-CatstagramUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		53C8EEC196DD47BD8FD36D4D /* Pods-CatstagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatstagramTests.debug.xcconfig"; path = "Target Support Files/Pods-CatstagramTests/Pods-CatstagramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		559A9A1023AE41050018B45D /* Pods_Catstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Catstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		620513852FCF83EE974055F7 /* Pods-Catstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catstagram.release.xcconfig"; path = "Target Support Files/Pods-Catstagram/Pods-Catstagram.release.xcconfig"; sourceTree = "<group>"; };
+		8E28FBFCC302545C317FA893 /* Pods_CatstagramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatstagramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D6D9E72F771EEDF10226B30 /* Pods_Catstagram_CatstagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Catstagram_CatstagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC2AC3404789D35A74708311 /* Pods-Catstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catstagram.debug.xcconfig"; path = "Target Support Files/Pods-Catstagram/Pods-Catstagram.debug.xcconfig"; sourceTree = "<group>"; };
+		ECD98A64F355B17D7D64B21A /* Pods-Catstagram-CatstagramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catstagram-CatstagramUITests.release.xcconfig"; path = "Target Support Files/Pods-Catstagram-CatstagramUITests/Pods-Catstagram-CatstagramUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D31FF53390688A6110D37CE0 /* Pods_Catstagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE078EC3ECD5CA2F3F06E6C /* Pods_CatstagramTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCC9B8E85F97726D803F0EF9 /* Pods_Catstagram_CatstagramUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +134,8 @@
 				08230D4529CF017600807BA2 /* CatstagramTests */,
 				08230D4F29CF017600807BA2 /* CatstagramUITests */,
 				08230D2D29CF017300807BA2 /* Products */,
+				9E352AB0912AF978BA27E7D1 /* Pods */,
+				A2AA38CFD620AF2EFDB3C011 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,6 +246,30 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		9E352AB0912AF978BA27E7D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC2AC3404789D35A74708311 /* Pods-Catstagram.debug.xcconfig */,
+				620513852FCF83EE974055F7 /* Pods-Catstagram.release.xcconfig */,
+				51E3329893E761C3237CC46F /* Pods-Catstagram-CatstagramUITests.debug.xcconfig */,
+				ECD98A64F355B17D7D64B21A /* Pods-Catstagram-CatstagramUITests.release.xcconfig */,
+				53C8EEC196DD47BD8FD36D4D /* Pods-CatstagramTests.debug.xcconfig */,
+				188BDAB59CAB2CBF7AA3FEA1 /* Pods-CatstagramTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A2AA38CFD620AF2EFDB3C011 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				559A9A1023AE41050018B45D /* Pods_Catstagram.framework */,
+				9D6D9E72F771EEDF10226B30 /* Pods_Catstagram_CatstagramUITests.framework */,
+				8E28FBFCC302545C317FA893 /* Pods_CatstagramTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -236,9 +277,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08230D5629CF017600807BA2 /* Build configuration list for PBXNativeTarget "Catstagram" */;
 			buildPhases = (
+				25095C63FBED3A284E53FB73 /* [CP] Check Pods Manifest.lock */,
 				08230D2829CF017300807BA2 /* Sources */,
 				08230D2929CF017300807BA2 /* Frameworks */,
 				08230D2A29CF017300807BA2 /* Resources */,
+				3E56BE878274365FE3575C2D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +296,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08230D5929CF017600807BA2 /* Build configuration list for PBXNativeTarget "CatstagramTests" */;
 			buildPhases = (
+				A6189684999A7BF8D48B2C8D /* [CP] Check Pods Manifest.lock */,
 				08230D3E29CF017600807BA2 /* Sources */,
 				08230D3F29CF017600807BA2 /* Frameworks */,
 				08230D4029CF017600807BA2 /* Resources */,
@@ -271,9 +315,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08230D5C29CF017600807BA2 /* Build configuration list for PBXNativeTarget "CatstagramUITests" */;
 			buildPhases = (
+				965310155C4040FB200C3760 /* [CP] Check Pods Manifest.lock */,
 				08230D4829CF017600807BA2 /* Sources */,
 				08230D4929CF017600807BA2 /* Frameworks */,
 				08230D4A29CF017600807BA2 /* Resources */,
+				ECA0BFC5119F806097598EF4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -359,6 +405,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25095C63FBED3A284E53FB73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Catstagram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E56BE878274365FE3575C2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Catstagram/Pods-Catstagram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Catstagram/Pods-Catstagram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Catstagram/Pods-Catstagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		965310155C4040FB200C3760 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Catstagram-CatstagramUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6189684999A7BF8D48B2C8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatstagramTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECA0BFC5119F806097598EF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Catstagram-CatstagramUITests/Pods-Catstagram-CatstagramUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Catstagram-CatstagramUITests/Pods-Catstagram-CatstagramUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Catstagram-CatstagramUITests/Pods-Catstagram-CatstagramUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08230D2829CF017300807BA2 /* Sources */ = {
@@ -554,6 +703,7 @@
 		};
 		08230D5729CF017600807BA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC2AC3404789D35A74708311 /* Pods-Catstagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -581,6 +731,7 @@
 		};
 		08230D5829CF017600807BA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 620513852FCF83EE974055F7 /* Pods-Catstagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -608,6 +759,7 @@
 		};
 		08230D5A29CF017600807BA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53C8EEC196DD47BD8FD36D4D /* Pods-CatstagramTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -627,6 +779,7 @@
 		};
 		08230D5B29CF017600807BA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 188BDAB59CAB2CBF7AA3FEA1 /* Pods-CatstagramTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -646,6 +799,7 @@
 		};
 		08230D5D29CF017600807BA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51E3329893E761C3237CC46F /* Pods-Catstagram-CatstagramUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -663,6 +817,7 @@
 		};
 		08230D5E29CF017600807BA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECD98A64F355B17D7D64B21A /* Pods-Catstagram-CatstagramUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
