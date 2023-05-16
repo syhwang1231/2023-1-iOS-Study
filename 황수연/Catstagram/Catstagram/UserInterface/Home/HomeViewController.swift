@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    var arrayCat: [FeedModel] = []
+    let imagePickerViewController = UIImagePickerController()  // 카메라 또는 앨범의 뷰컨트롤러
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,15 +29,26 @@ class HomeViewController: UIViewController {
         // story도 똑같이 nib으로 등록
         let storyNib = UINib(nibName: "StoryTableViewCell", bundle: nil)
         tableView.register(storyNib, forCellReuseIdentifier: "StoryTableViewCell")
+        
+        /* 서버와 연동 */
+        let input = FeedAPIInput(limit: 10, page: 0)
+        FeedDataManager().feedDataManager(input, self)
+        
+        // imagePicker
+        imagePickerViewController.delegate = self
     }
     
+    @IBAction func buttonGoAlbum(_ sender: Any) {
+        self.imagePickerViewController.sourceType = .photoLibrary
+        self.present(imagePickerViewController, animated: true, completion: nil)
+    }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     // 한 섹션에 몇 개의 셀을 넣을지
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // test
-        return 10
+        // story 셀이 있으므로 전체 셀 개수는 arrayCat의 크기보다 1 커야 함
+        return arrayCat.count + 1
     }
     
     // 어떤 셀을 보여줄지
@@ -51,7 +65,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell", for: indexPath) as? FeedTableViewCell else{
                 return UITableViewCell()
             }
-            cell.selectionStyle = .none
+            if let urlString = arrayCat[indexPath.row - 1].url {
+                let url = URL(string: urlString)
+                cell.imageViewFeed.kf.setImage(with: url)
+            }
+            
             return cell
         }
     }
@@ -96,4 +114,26 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return CGSize(width: 50, height: 60)
     }
     
+}
+
+extension HomeViewController {
+    func successAPI(_ result: [FeedModel]) {
+        arrayCat = result
+        // viewDidLoad() 에서 이미 테이블뷰가 완성됐으므로 한 번 더 reload해줘야 함.
+        tableView.reloadData()
+    }
+}
+
+extension HomeViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    // 이미지 선택이 끝났을 때
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            let imageString = "https://firebasestorage.googleapis.com/v0/b/catstargram-d7fbf.appspot.com/o/Cat?alt=media&token=a7e69494-443f-425d-a86a-59be45d75a43"
+            let input = FeedUploadInput(content: "고양이", postImgsUrl: [imageString])
+            
+            FeedUploadDataManager().posts(self, input)
+            
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
 }
