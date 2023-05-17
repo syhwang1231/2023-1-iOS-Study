@@ -35,7 +35,7 @@ class HomeViewController: UIViewController {
         tableView.register(storyNib, forCellReuseIdentifier: "StoryTableViewCell")
 
         
-        let input = FeedAPIInput(limit: 5, page: 0)
+        let input = FeedAPIInput(limit: 5, page: 0, api_key: "live_Sq8CMi2dRm9KrbLwVTXqGwG8tH1ss60AwJLmnmygavdHNDgDB5wDD4wdWJgUlsW2")
         FeedDataManager().FeedDataManager(input,self)
         
         imagePickerViewController.delegate = self
