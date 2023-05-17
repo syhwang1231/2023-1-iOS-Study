@@ -442,10 +442,23 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button" image="ic_home_heart"/>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikv-jN-q3P">
+                                        <rect key="frame" x="272" y="12.666666666666671" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="1NS-EG-o9Z"/>
+                                            <constraint firstAttribute="width" constant="25" id="53o-cn-HE2"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button" image="ic_home_upload"/>
+                                        <connections>
+                                            <action selector="buttonDoAlbum:" destination="6jy-Mc-rti" eventType="touchUpInside" id="n12-dG-JD0"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="tTT-n9-8dv" secondAttribute="trailing" constant="15" id="5bq-8l-zza"/>
+                                    <constraint firstItem="ikv-jN-q3P" firstAttribute="centerY" secondItem="KBF-fp-m2Z" secondAttribute="centerY" id="BGC-7i-e3D"/>
                                     <constraint firstItem="vCQ-sl-UH7" firstAttribute="leading" secondItem="Lkx-A0-86M" secondAttribute="leading" constant="15" id="DzA-7h-sYm"/>
                                     <constraint firstItem="vCQ-sl-UH7" firstAttribute="centerY" secondItem="Lkx-A0-86M" secondAttribute="centerY" id="F2V-gE-GLr"/>
                                     <constraint firstAttribute="bottom" secondItem="vCQ-sl-UH7" secondAttribute="bottom" constant="5" id="GYk-pv-xPq"/>
@@ -453,6 +466,7 @@
                                     <constraint firstItem="tTT-n9-8dv" firstAttribute="leading" secondItem="KBF-fp-m2Z" secondAttribute="trailing" constant="15" id="Upo-YE-SAP"/>
                                     <constraint firstItem="vCQ-sl-UH7" firstAttribute="top" secondItem="Lkx-A0-86M" secondAttribute="top" constant="5" id="c4i-yv-qaK"/>
                                     <constraint firstItem="KBF-fp-m2Z" firstAttribute="centerY" secondItem="Lkx-A0-86M" secondAttribute="centerY" id="jWO-JQ-xv0"/>
+                                    <constraint firstItem="KBF-fp-m2Z" firstAttribute="leading" secondItem="ikv-jN-q3P" secondAttribute="trailing" constant="16" id="tzr-f5-ijM"/>
                                     <constraint firstItem="tTT-n9-8dv" firstAttribute="centerY" secondItem="Lkx-A0-86M" secondAttribute="centerY" id="xgK-ok-ao4"/>
                                 </constraints>
                             </view>
@@ -473,7 +487,7 @@
                             <constraint firstItem="Lkx-A0-86M" firstAttribute="leading" secondItem="v22-ep-hWZ" secondAttribute="leading" id="xgs-N4-Qds"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="v2s-PR-etb"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="v2s-PR-etb"/>
                     <connections>
                         <outlet property="tableView" destination="H3L-ah-99N" id="6RX-HC-ba1"/>
                     </connections>
@@ -490,6 +504,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="6jy-Mc-rti" kind="relationship" relationship="viewControllers" id="ab1-sv-D3d"/>
@@ -522,7 +537,7 @@
         <scene sceneID="v3e-lt-7DL">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zRF-Ty-HeI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="eD3-bP-Fky"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.circle" catalog="system" id="eD3-bP-Fky"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pBq-uW-RLs">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -541,10 +556,13 @@
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="95"/>
         <image name="f.square.fill" catalog="system" width="128" height="114"/>
+        <image name="house" catalog="system" width="128" height="104"/>
         <image name="ic_catstagram_logo" width="476" height="96"/>
         <image name="ic_home_heart" width="512" height="512"/>
         <image name="ic_home_send" width="512" height="512"/>
+        <image name="ic_home_upload" width="512" height="512"/>
         <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
