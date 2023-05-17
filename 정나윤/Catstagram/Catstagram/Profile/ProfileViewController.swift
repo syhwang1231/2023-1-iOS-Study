@@ -13,10 +13,14 @@ class ProfileViewController: UIViewController {
     //MARK : -Properties
     @IBOutlet weak var profileCollectionView: UICollectionView!
     
+    var userPosts : [GetUserPosts]? {
+        didSet { self.profileCollectionView.reloadData() }
+    }
     //MARK : -Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
+        setupData()
     }
     //MARK : -Actions
     //MARK : -Helpers
@@ -29,6 +33,10 @@ class ProfileViewController: UIViewController {
         
         //PostCollectionViewCell
         profileCollectionView.register(UINib(nibName: "PostCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: PostCollectionViewCell.identifier)
+    }
+    // 이미지 뷰의 이미지 업롣
+    private func setupData(){
+        UserFeedDataManager().getUserFeed(self)
     }
 }
 //MARK : -UICollectionViewDelegate, UICollectionViewDataSource
@@ -43,8 +51,8 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         switch section {
         case 0:
             return 1
-        default :
-            return 24
+        default : //1
+            return userPosts?.count ?? 0
         }
     }
     // cell 생성
@@ -63,6 +71,13 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
                 //return UICollectionViewCell()
                 fatalError("셀 타입 캐스팅 실패..")
             }
+            let itemIndex = indexPath.item
+            if let cellData = self.userPosts {
+                //데이터가 있는 경우, cell 데이터를 전달
+                cell.setupData(cellData[itemIndex].postImgUrl)
+
+            }
+           
             return cell
             
         }
@@ -99,5 +114,11 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout{
         default:
             return CGFloat(1)
         }
+    }
+}
+
+extension ProfileViewController{
+    func successFeedAPI(_ result: UserFeedModel) {
+        self.userPosts = result.result?.getUserPosts
     }
 }

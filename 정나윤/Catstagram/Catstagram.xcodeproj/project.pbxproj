@@ -14,6 +14,14 @@
 		386B9BB529D8872E009D7881 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386B9BB429D8872E009D7881 /* UIView+Extension.swift */; };
 		386B9BB729D888BD009D7881 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386B9BB629D888BD009D7881 /* UIViewController+Extension.swift */; };
 		386B9BB929D892F0009D7881 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386B9BB829D892F0009D7881 /* UserInfo.swift */; };
+		387C3F4E2A13D5CE00CA22B9 /* FeedAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387C3F4D2A13D5CE00CA22B9 /* FeedAPIInput.swift */; };
+		387C3F502A13D60500CA22B9 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387C3F4F2A13D60500CA22B9 /* FeedModel.swift */; };
+		387C3F522A13D63900CA22B9 /* FeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387C3F512A13D63900CA22B9 /* FeedDataManager.swift */; };
+		387C3F552A13E05500CA22B9 /* FeedUploadInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387C3F542A13E05500CA22B9 /* FeedUploadInput.swift */; };
+		387C3F572A13E09400CA22B9 /* FeedUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387C3F562A13E09400CA22B9 /* FeedUploadModel.swift */; };
+		387C3F592A13E13100CA22B9 /* FeedUploadDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387C3F582A13E13100CA22B9 /* FeedUploadDataManager.swift */; };
+		387C3F602A13E93400CA22B9 /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387C3F5F2A13E93400CA22B9 /* UserFeedModel.swift */; };
+		387C3F622A13F17400CA22B9 /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387C3F612A13F17400CA22B9 /* UserFeedDataManager.swift */; };
 		38AC456E29D7D96900938670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC456D29D7D96900938670 /* AppDelegate.swift */; };
 		38AC457029D7D96900938670 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC456F29D7D96900938670 /* SceneDelegate.swift */; };
 		38AC457529D7D96900938670 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38AC457329D7D96900938670 /* Main.storyboard */; };
@@ -41,6 +49,14 @@
 		386B9BB429D8872E009D7881 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		386B9BB629D888BD009D7881 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		386B9BB829D892F0009D7881 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		387C3F4D2A13D5CE00CA22B9 /* FeedAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPIInput.swift; sourceTree = "<group>"; };
+		387C3F4F2A13D60500CA22B9 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		387C3F512A13D63900CA22B9 /* FeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataManager.swift; sourceTree = "<group>"; };
+		387C3F542A13E05500CA22B9 /* FeedUploadInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadInput.swift; sourceTree = "<group>"; };
+		387C3F562A13E09400CA22B9 /* FeedUploadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadModel.swift; sourceTree = "<group>"; };
+		387C3F582A13E13100CA22B9 /* FeedUploadDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadDataManager.swift; sourceTree = "<group>"; };
+		387C3F5F2A13E93400CA22B9 /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
+		387C3F612A13F17400CA22B9 /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
 		38AC456A29D7D96900938670 /* Catstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38AC456D29D7D96900938670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38AC456F29D7D96900938670 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +95,7 @@
 		38528DDA2A0AB2150064F029 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				387C3F5E2A13E92300CA22B9 /* UserFeedDataManager */,
 				38528DDD2A0AB6910064F029 /* Cell */,
 				38528DDB2A0AB2430064F029 /* ProfileViewController.swift */,
 			);
@@ -92,6 +109,63 @@
 				38E4F2F22A0B92CE0035BAE6 /* ProfileCell */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		387C3F4C2A13D5AD00CA22B9 /* FeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				387C3F4D2A13D5CE00CA22B9 /* FeedAPIInput.swift */,
+				387C3F4F2A13D60500CA22B9 /* FeedModel.swift */,
+				387C3F512A13D63900CA22B9 /* FeedDataManager.swift */,
+			);
+			path = FeedDataManager;
+			sourceTree = "<group>";
+		};
+		387C3F532A13E02600CA22B9 /* FeedUploadDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				387C3F542A13E05500CA22B9 /* FeedUploadInput.swift */,
+				387C3F562A13E09400CA22B9 /* FeedUploadModel.swift */,
+				387C3F582A13E13100CA22B9 /* FeedUploadDataManager.swift */,
+			);
+			path = FeedUploadDataManager;
+			sourceTree = "<group>";
+		};
+		387C3F5B2A13E6CA00CA22B9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				38AC456D29D7D96900938670 /* AppDelegate.swift */,
+				38AC456F29D7D96900938670 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		387C3F5C2A13E6F400CA22B9 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				38AC458329D81D0E00938670 /* LoginViewController.swift */,
+				38AC458529D81FF900938670 /* RegisterViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		387C3F5D2A13E77800CA22B9 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				387C3F5B2A13E6CA00CA22B9 /* App */,
+				38E86A5E29FE3E190083EC0D /* Home */,
+				387C3F5C2A13E6F400CA22B9 /* Authentication */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		387C3F5E2A13E92300CA22B9 /* UserFeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				387C3F5F2A13E93400CA22B9 /* UserFeedModel.swift */,
+				387C3F612A13F17400CA22B9 /* UserFeedDataManager.swift */,
+			);
+			path = UserFeedDataManager;
 			sourceTree = "<group>";
 		};
 		38AC456129D7D96900938670 = {
@@ -115,16 +189,13 @@
 		38AC456C29D7D96900938670 /* Catstagram */ = {
 			isa = PBXGroup;
 			children = (
-				38E86A5E29FE3E190083EC0D /* Home */,
-				38AC456D29D7D96900938670 /* AppDelegate.swift */,
-				38AC456F29D7D96900938670 /* SceneDelegate.swift */,
+				38528DDA2A0AB2150064F029 /* Profile */,
+				387C3F5D2A13E77800CA22B9 /* UserInterface */,
 				38AC457329D7D96900938670 /* Main.storyboard */,
 				38AC457629D7D96C00938670 /* Assets.xcassets */,
 				38AC457829D7D96C00938670 /* LaunchScreen.storyboard */,
 				38AC457B29D7D96C00938670 /* Info.plist */,
-				38AC458329D81D0E00938670 /* LoginViewController.swift */,
 				38AC458129D81C6C00938670 /* Color+Extention.swift */,
-				38AC458529D81FF900938670 /* RegisterViewController.swift */,
 				386B9BB429D8872E009D7881 /* UIView+Extension.swift */,
 				386B9BB629D888BD009D7881 /* UIViewController+Extension.swift */,
 				386B9BB829D892F0009D7881 /* UserInfo.swift */,
@@ -153,7 +224,8 @@
 		38E86A5E29FE3E190083EC0D /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				38528DDA2A0AB2150064F029 /* Profile */,
+				387C3F532A13E02600CA22B9 /* FeedUploadDataManager */,
+				387C3F4C2A13D5AD00CA22B9 /* FeedDataManager */,
 				38E86A6129FE417F0083EC0D /* Cell */,
 				38E86A5F29FE3E530083EC0D /* HomeViewController.swift */,
 			);
@@ -187,7 +259,6 @@
 				35E639F2A793E2BC6952BF6F /* Pods-Catstagram.debug.xcconfig */,
 				E8736036F343C7D93C5155EF /* Pods-Catstagram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -313,17 +384,25 @@
 			files = (
 				386B9BB529D8872E009D7881 /* UIView+Extension.swift in Sources */,
 				38AC458429D81D0E00938670 /* LoginViewController.swift in Sources */,
+				387C3F572A13E09400CA22B9 /* FeedUploadModel.swift in Sources */,
+				387C3F622A13F17400CA22B9 /* UserFeedDataManager.swift in Sources */,
+				387C3F502A13D60500CA22B9 /* FeedModel.swift in Sources */,
 				38AC458629D81FF900938670 /* RegisterViewController.swift in Sources */,
+				387C3F552A13E05500CA22B9 /* FeedUploadInput.swift in Sources */,
+				387C3F602A13E93400CA22B9 /* UserFeedModel.swift in Sources */,
 				38E86A7029FE55880083EC0D /* StoryTableViewCell.swift in Sources */,
 				38E86A7429FE5F7F0083EC0D /* StoryCollectionViewCell.swift in Sources */,
 				38E4F2F62A0B92F80035BAE6 /* PostCollectionViewCell.swift in Sources */,
 				38AC458229D81C6C00938670 /* Color+Extention.swift in Sources */,
 				386B9BB929D892F0009D7881 /* UserInfo.swift in Sources */,
 				38E86A6029FE3E530083EC0D /* HomeViewController.swift in Sources */,
+				387C3F592A13E13100CA22B9 /* FeedUploadDataManager.swift in Sources */,
 				386B9BB729D888BD009D7881 /* UIViewController+Extension.swift in Sources */,
 				38AC456E29D7D96900938670 /* AppDelegate.swift in Sources */,
+				387C3F4E2A13D5CE00CA22B9 /* FeedAPIInput.swift in Sources */,
 				38528DE02A0AB6B80064F029 /* ProfileCollectionViewCell.swift in Sources */,
 				38528DDC2A0AB2430064F029 /* ProfileViewController.swift in Sources */,
+				387C3F522A13D63900CA22B9 /* FeedDataManager.swift in Sources */,
 				38AC457029D7D96900938670 /* SceneDelegate.swift in Sources */,
 				38E86A6829FE42660083EC0D /* FeedTableViewCell.swift in Sources */,
 			);
