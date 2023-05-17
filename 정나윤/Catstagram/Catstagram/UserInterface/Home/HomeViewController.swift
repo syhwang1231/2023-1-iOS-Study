@@ -31,7 +31,7 @@ class HomeViewController: UIViewController{
         
         
         
-        let input = FeedAPIInput (limit: 2, page: 0)
+        let input = FeedAPIInput (limit: 5, page: 0, api_key:"live_Dg3jt2SwxaIjtMVPEFGv18EXEppDgcjlMBfJJhXmDyKFN7KA8XkmHZs49Kb8xLnx")
         
         FeedDataManager().feedDataManager(input, self)
         
