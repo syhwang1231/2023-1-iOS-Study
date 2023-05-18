@@ -31,7 +31,7 @@ class HomeViewController: UIViewController {
         tableView.register(storyNib, forCellReuseIdentifier: "StoryTableViewCell")
         
         /* 서버와 연동 */
-        let input = FeedAPIInput(limit: 10, page: 0)
+        let input = FeedAPIInput(limit: 5, page: 0)
         FeedDataManager().feedDataManager(input, self)
         
         // imagePicker
